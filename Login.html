@@ -88,6 +88,14 @@
             justify-content: center;
             flex-direction: column;
         }
+        .button {
+            color: black; 
+            background-color: white; 
+            border-radius: 10%; 
+            border: 0; 
+            font-size: 20px; 
+            padding: 10px;
+        }
         .footer {
             position: relative;
             left: 0;
@@ -130,8 +138,13 @@
                     </span>
                     <img class="user" src="Default-welcomer.png" alt="User" srcset="">
                     <div class="card-body">
-                        <span class="content-text"><b>Username:</b> LAGUNA, Los Baños, Philippines, 4030</span>
-                        <span class="content-text"><b>Password:</b> 0946 561 3739</span>
+                        <form action="Homepage.html">
+                            <label for="Username">Username:</label>
+                            <input type="text" id="Username" name="Username"><br><br>
+                            <label for="Password">Password:</label>
+                            <input type="password" id="Password" name="Password"><br><br>
+                            <input class="button" type="submit" value="Submit">
+                        </form>
                     </div>
                 </div>
             </div>
