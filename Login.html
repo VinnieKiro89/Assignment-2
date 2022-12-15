@@ -1,22 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <style> /* remove unused*/
-        .headText {
-            font-family: Impact;
-            font-size: 40px;
-            color: rgb(240, 240, 240);
-        }
+    <title>Login / Sign Up</title>
+    <style>
         body {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 0.75rem;
         }
         .head {
             background-color: rgba(247, 194, 38, 255);
@@ -31,100 +30,66 @@
             display: flex;
             justify-content: center;
         }
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 0.75rem;
-        }
-        .content {
-            padding-top: 0px;
-            padding-bottom: 0px;
-        }
-        .imageBody {
-            display: block;
-            width: 100%;
-            height: 652px;
-            object-fit: cover;
-            object-position: 30% 30%;
-            
-        }
-        .overlay {
-            position: absolute;
-            bottom: 0;
-            background: rgb(0, 0, 0); /* ? */
-            background: rgba(0, 0, 0, 0.5); /* Black see-through */
-            color: #f1f1f1;
-            width: 100%;
-            height: 652px;
-            opacity: 1;
-            color: white;
-        }
-        .textOverlay {
-            width: 100%;
-            height: 652px;
-            display: flex;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
+        .headText {
+            font-family: Impact;
+            font-size: 40px;
+            color: rgb(240, 240, 240);
         }
         .logo {
             border-radius: 1000000000000%;
             width: 7rem;
             height: 7rem;
         }
-        .details {
+        .user {
             display: flex;
-            flex-direction: column;
-            padding-left: 1rem;
-        }
-        .texts {
-            padding-top: 0.25rem;
-            padding-bottom: 0.25rem;
-        }
-        .card {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
             justify-content: center;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            align-items: center;
+            border-radius: 100000%;
+            width: 130px;
+            height: 130px;
+            padding: 10px;
         }
-        .container {
-            display: flex;
-            text-align: center;
-            justify-content: center;
+        .parent {
             width: 100%;
             height: 100%;
         }
-
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60%;
+        }
         .card {
-            width: 50%;
+            width: 30%;
             border-radius: 0.5rem;
             padding: 0.75rem;
-            background-color: white;
+            background-color: rgb(219, 173, 34);
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             margin-bottom: 1.25rem;
             margin: 0.50rem;
         }
-
         .card-body {
             padding-top: 1.25rem;
         }
-
         .content-text {
             display: block;
         }
-
         .text-bold {
             font-weight: bold;
         }
-
         .text-lgr {
-            font-size: larger;
+            font-size: 30px;
+        }
+        .text-center {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
         .footer {
             position: relative;
-            margin-top: auto;
             left: 0;
             bottom: 0;
             width: 100%;
@@ -154,38 +119,29 @@
             <a href="Login.html">Login / Sign Up</a>
         </div>
     </div>
-    
-    <!-- body -->
-    <div class="container">
-        <div class="card">
-            <div>
-                <span class="text-bold text-lgr">
-                    Contact info
-                </span>
-                <div class="card-body">
-                    <span class="content-text"><b>Address:</b> LAGUNA, Los Baños, Philippines, 4030</span>
-                    <span class="content-text"><b>Mobile no.:</b> 0946 561 3739</span>
-                    <span class="content-text"><b>Email:</b> egmfoodproducts19@gmail.com</span>
-                </div>
-            </div>
-        </div>
 
-        <div class="card">
-            <div>
-                <span class="text-bold text-lgr">
-                    Websites and social links
-                </span>
-                <div class="card-body">
-                    <span class="content-text"><b>Website:</b> https://www.instagram.com/egm_foods/</span>
+    <!-- Body -->
+    <div class="parent">
+        <div class="container">
+            <div class="card">
+                <div class="text-center">
+                    <span class="text-bold text-lgr" style="color: white; padding: 30px;">
+                        Login
+                    </span>
+                    <img class="user" src="Default-welcomer.png" alt="User" srcset="">
+                    <div class="card-body">
+                        <span class="content-text"><b>Username:</b> LAGUNA, Los Baños, Philippines, 4030</span>
+                        <span class="content-text"><b>Password:</b> 0946 561 3739</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <!-- Footer -->
     <div class="footer">
         <p>| © Copyright <b>EGM FOOD PRODUCTS.</b> All rights reserved |</p>
     </div>
-
 </body>
 </html>
