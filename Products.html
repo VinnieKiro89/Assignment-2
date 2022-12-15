@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <style>
-        div{
+        .headText {
+            font-family: Impact;
+            font-size: 40px;
+            color: rgb(240, 240, 240);
+        }
+        div {
             text-align: center;
         }
         body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
+        .logo {
+            border-radius: 1000000000000%;
+            width: 7rem;
+            height: 7rem;
+        }
         .head {
-            background-color: rgba(54, 54, 221, 0.685);
-            padding: 0.25rem;
+            background-color: rgba(247, 194, 38, 255);
+            padding: 1.25rem;
             display: flex;
-            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .head2 {
+            font-size: 20px;
+            padding: 0.30rem;
+            display: flex;
+            justify-content: center;
         }
         a {
             text-decoration: none;
@@ -27,36 +47,42 @@
             margin-left: 10rem;
             margin-right: 10rem;
         }
-        .container {
+        .gallery {
             display: flex;
-            max-width: 1536px;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1rem;
+            flex-wrap: wrap;
         }
 
         .card {
-            width: 50%;
-            border-radius: 0.5rem;
-            padding: 0.75rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            display: flex;
+            flex-direction: column;
             background-color: white;
-            margin-bottom: 1.25rem;
-            margin: 0.50rem;
+            border-radius: 1rem;
         }
 
-        .card-body {
-            padding-top: 1.25rem;
+        .img-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border-radius: 1rem;
         }
 
-        .content-text {
-            display: block;
+        .img-preview {
+            width: 100%;
+            object-fit: cover;
         }
 
-        .text-bold {
-            font-weight: bold;
-        }
-
-        .text-lgr {
-            font-size: larger;
+        .card-content {
+            padding: 1.25rem;
         }
         .footer {
+            margin-top: auto;
             position: relative;
             left: 0;
             bottom: 0;
@@ -73,28 +99,65 @@
 </head>
 
 <body>
-    <div class="container">
+    <!-- Header -->
+    <div class="head">
+        <img class="logo" src="logo.jpg" alt="EGM Logo" srcset="">
+        <span class="headText">EGM Gabi Chips</span>
+        <div class="head2">
+            <a href="Homepage.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Products.html">Products</a>
+            <a href="Photo Gallery.html">Photo Gallery</a>
+            <a href="Checkout.html">Add to Cart / Checkout</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="Login.html">Login / Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="gallery">
         <div class="card">
-            <div>
-                <span class="text-bold text-lgr">
-                    Contact info
-                </span>
-                <div class="card-body">
-                    <span class="content-text"><b>Address:</b> LAGUNA, Los Baños, Philippines, 4030</span>
-                    <span class="content-text"><b>Mobile no.:</b> 0946 561 3739</span>
-                    <span class="content-text"><b>Email:</b> egmfoodproducts19@gmail.com</span>
-                </div>
+            <div class="img-container">
+                <img src="images/plain.jpg" class="img-preview" alt="">
+            </div>
+            <div class="card-content">
+                Plain Chips<br>50.00 P
             </div>
         </div>
 
         <div class="card">
-            <div>
-                <span class="text-bold text-lgr">
-                    Websites and social links
-                </span>
-                <div class="card-body">
-                    <span class="content-text"><b>Website:</b> https://www.instagram.com/egm_foods/</span>
-                </div>
+            <div class="img-container">
+                <img src="images/salted.jpg" class="img-preview" alt="">
+            </div>
+            <div class="card-content">
+                Salted Chips<br>50.00 P
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/cheese.jpg" class="img-preview" alt="">
+            </div>
+            <div class="card-content">
+                Cheese Chips<br>50.00 P
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/barb.jpg" class="img-preview" alt="">
+            </div>
+            <div class="card-content">
+                Barbecue Chips<br>50.00 P
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="images/sourcream.jpg" class="img-preview" alt="">
+            </div>
+            <div class="card-content">
+                Sour Cream Chips<br>50.00 P
             </div>
         </div>
     </div>
